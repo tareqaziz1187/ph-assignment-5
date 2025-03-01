@@ -11,7 +11,7 @@
 
 
 </head>
-<body class="bg-[#F4F7FF]">
+<body>
     
     <section class="m-[2%] mt-5">
 
@@ -22,8 +22,8 @@
                 <p class="content-center text-xl">Dev <span class="font-bold">Board</span></p>
             </div>
             <div class="flex gap-5">
-                <p class="flex "><img src="./assets/checkbox.png" alt=""><span class="font-bold text-xl">23</span></p>
-                <button class="h-7 w-7 rounded-[50%]"><img src="./assets/theme-btn.png" alt=""></button>
+                <p class="flex "><img src="./assets/checkbox.png" alt=""><span class="font-bold text-xl" id="doneTask">23</span></p>
+                <button class="h-7 w-7 rounded-[50%]" id="colorbtn"><img src="./assets/theme-btn.png" alt=""></button>
             </div>
         </div>
 
@@ -37,12 +37,12 @@
                         <div class="bg-[#F4F7FF] flex justify-center items-center rounded-xl">
                             <div class="bg-[#FFFFFF] h-10 w-10 rounded-[50%]"><img  src="./assets/checkbox.png" alt=""></div>
                             <div>
-                                <p>Task Assigned <br> <span>05</span></p>
+                                <p>Task Assigned <br> <span class="text-xl font-bold" id="asinedTask">6</span></p>
                                 
                             </div>
                         </div>
                     
-                    <div class="grid col-span-2">
+                    <div class="grid col-span-2" id="discover">
                         <div class="bg-indigo-500 flex justify-around px-5 rounded-xl">
                             <img src="./assets/board.png" alt="">
                             <p class="text-2xl content-center text-white">Discover Something <br> New Today!</p>
@@ -51,8 +51,8 @@
                     <div class="bg-[#F4F7FF] flex justify-center items-center rounded-xl">
                         <div class="bg-[#FFFFFF] h-10 w-10 rounded-[50%]"><img src="./assets/calender.png" alt=""></div>
                         <div>
-                            <p>Wed ,<br>
-                                Jul 28 2025  </p>
+                            <p id="date" class="font-bold"></p>
+                            <p id="time" class="font-bold text-blue-600"></p>
                             
                         </div>
                 </div>
@@ -73,7 +73,7 @@
                             <p class="text-gray-400">Deadline</p>
                             <p class="font-semibold">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]">Completed</button>
+                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]" id="com1">Completed</button>
                         </div>
                     </div>
 
@@ -89,7 +89,7 @@
                             <p class="text-gray-400">Deadline</p>
                             <p class="font-semibold">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]">Completed</button>
+                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]" id="com2">Completed</button>
                         </div>
                     </div>
 
@@ -106,7 +106,7 @@
                             <p class="text-gray-400">Deadline</p>
                             <p class="font-semibold">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]">Completed</button>
+                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]" id="com3">Completed</button>
                         </div>
                     </div>
 
@@ -123,7 +123,7 @@
                             <p class="text-gray-400">Deadline</p>
                             <p class="font-semibold">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]">Completed</button>
+                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]" id="com4">Completed</button>
                         </div>
                     </div>
 
@@ -139,7 +139,7 @@
                             <p class="text-gray-400">Deadline</p>
                             <p class="font-semibold">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]">Completed</button>
+                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]" id="com5">Completed</button>
                         </div>
                     </div>
 
@@ -156,7 +156,7 @@
                             <p class="text-gray-400">Deadline</p>
                             <p class="font-semibold">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]">Completed</button>
+                        <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]" id="com6">Completed</button>
                         </div>
                     </div>
 
@@ -179,11 +179,11 @@
                         <p>Activity Log</p>
 
                     </div>
-                    <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]">Clear History</button>
+                    <button class="bg-[#3752FD] rounded-xl px-8 py-4 text-[#FFFFFF]" id="clearhistory">Clear History</button>
                 </div>
 
-                <div class="bg-[#F4F7FF] mx-5">
-                    <p class="p-2">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                <div id="activity" >
+                    
                 </div>
                     
                 </div>
@@ -193,6 +193,7 @@
 
         </section>
     </section>
-    
+    <script src="index.js"></script>
+
 </body>
 </html>
